@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="SmartOffer AI – vytvoř cenové nabídky pomocí AI. Rychle, profesionálně a bez zbytečností. E-book + šablony pro CZ trh." />
+<title>SmartOffer AI — Cenové nabídky pomocí AI</title>
+
+<!-- SYSTEM FONT (snadno vyměnit za vlastní): uprav family v CSS) -->
+<style>
+:root{
+  --accent:#1867d1;
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --maxw:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased;}
+.container{max-width:var(--maxw);margin:0 auto;padding:28px;}
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#2bb5ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+h1{font-size:26px;margin:0}
+.lead{color:var(--muted);margin-top:6px}
+
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+.card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.cta-btn{display:inline-block;background:var(--accent);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+.small-txt{font-size:13px;color:var(--muted)}
+
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.feature{background:linear-gradient(180deg,rgba(24,103,209,0.04),transparent);border-radius:10px;padding:16px}
+
+.sections{margin-top:24px;display:grid;gap:18px}
+.section{display:flex;gap:18px;align-items:flex-start}
+.section .num{font-weight:700;color:var(--accent);min-width:36px;height:36px;background:rgba(24,103,209,0.08);display:flex;align-items:center;justify-content:center;border-radius:8px}
+.section .content h3{margin:0 0 6px 0}
+.bullets{margin:10px 0;padding-left:18px;color:var(--muted)}
+
+.pricing{display:flex;gap:16px;flex-wrap:wrap}
+.price-card{flex:1;min-width:220px;background:var(--card);padding:18px;border-radius:12px;border:1px solid #eef2f6}
+.price-card h4{margin:0}
+.price{font-size:22px;font-weight:700;margin:12px 0}
+
+.footer{margin-top:32px;padding:20px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.form-row{display:flex;gap:8px;margin-top:12px}
+.input{padding:10px;border-radius:8px;border:1px solid #e6eef8;min-width:200px}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr; padding-bottom:0}
+  .features{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .features{grid-template-columns:1fr}
+  .header{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="header">
+    <div class="logo">
+      <div class="mark">AI</div>
+      <div>
+        <div style="font-weight:700">SmartOffer AI</div>
+        <div class="small-txt">Cenové nabídky pomocí AI — CZ verze</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#price" class="small-txt" style="text-decoration:none;color:var(--muted)">Ceny</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div>
+      <h1>Vytvoř profesionální cenovou nabídku během pár minut</h1>
+      <p class="lead">E-book + šablony a prompty pro AI, které ti pomůžou psát nabídky přesně, rychle a bez stresu. Pro ČR, připravené pro řemeslníky, marketing a IT.</p>
+
+      <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+        <!-- Replace BUY_LINK with your SimpleShop/Gumroad/Sellio URL -->
+        <a class="cta-btn" href="BUY_LINK" id="buy-now">Koupit e-book</a>
+        <a class="small-txt" href="#samples" style="text-decoration:none;color:var(--muted)">Nahlédnout do obsahu</a>
+      </div>
+
+      <div class="features" style="margin-top:20px">
+        <div class="feature">
+          <strong>Rychle použitelné</strong>
+          <div class="small-txt">Prompty a šablony připravené pro ChatGPT/Claude.</div>
+        </div>
+        <div class="feature">
+          <strong>Pro český trh</strong>
+          <div class="small-txt">Termíny, fakturace a příklady pro ČR.</div>
+        </div>
+        <div class="feature">
+          <strong>Praktické příklady</strong>
+          <div class="small-txt">Řemesla, marketing, e-commerce — konkrétně.</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card">
+      <h3>Co dostaneš</h3>
+      <ul class="bullets">
+        <li>E-book (23 stran) — kompletní návod</li>
+        <li>10+ hotových promptů a šablon</li>
+        <li>Kalkulační tabulka (Excel/Sheets)</li>
+        <li>Připravené e-maily a follow-up texty</li>
+      </ul>
+
+      <div style="margin-top:12px">
+        <div style="font-size:13px;color:var(--muted)">Cena</div>
+        <div class="price">499 Kč</div>
+        <a class="cta-btn" href="BUY_LINK">Koupit teď</a>
+        <div class="note">Po zaplacení obdržíš okamžitě PDF + odkaz na šablony.</div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Obsah / ukázky -->
+  <section id="samples" class="sections">
+    <div class="section card">
+      <div class="num">1</div>
+      <div class="content">
+        <h3>Co najdeš uvnitř</h3>
+        <p class="small-txt">Stručné přehledy, prompty se vzory, příklady nabídek a průvodce propojením s Google Sheets.</p>
+        <ul class="bullets">
+          <li>Jak sbírat data od klienta</li>
+          <li>Přesné prompty na cenotvorbu</li>
+          <li>Šablony pro emaily a follow-up</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section card">
+      <div class="num">2</div>
+      <div class="content">
+        <h3>Pro koho je e-book</h3>
+        <p class="small-txt">Řemeslníci, malé agentury, freelanceři a všichni, kdo chtějí rychle profesionálně reagovat na poptávky.</p>
+      </div>
+    </div>
+
+    <div class="section card">
+      <div class="num">3</div>
+      <div class="content">
+        <h3>Garance spokojenosti</h3>
+        <p class="small-txt">30 dní na vrácení peněz. Pokud e-book nesplní očekávání, vracíme peníze.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="price" style="margin-top:18px">
+    <h3 style="margin:0 0 12px 0">Cenové balíčky</h3>
+    <div class="pricing">
+      <div class="price-card">
+        <h4>Basic</h4>
+        <div class="price">499 Kč</div>
+        <div class="small-txt">E-book + šablony</div>
+      </div>
+      <div class="price-card">
+        <h4>Pro</h4>
+        <div class="price">999 Kč</div>
+        <div class="small-txt">E-book + detailní šablony + 1x konzultace (30 min)</div>
+      </div>
+      <div class="price-card">
+        <h4>Agentura</h4>
+        <div class="price">2 499 Kč</div>
+        <div class="small-txt">Kompletní balík + implementace šablon</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email capture (no backend) -->
+  <section style="margin-top:22px" class="card">
+    <h3>Přihlaš se k odběru a získej 3 ukázkové prompty zdarma</h3>
+    <form onsubmit="event.preventDefault(); alert('Díky! Nahraď form action vlastním back-endem.');">
+      <div class="form-row">
+        <input class="input" type="email" placeholder="tvoje@email.cz" required />
+        <button class="cta-btn" type="submit">Poslat ukázky</button>
+      </div>
+      <div class="note">Nesdílíme e-maily. Odebírání můžeš kdykoli zrušit.</div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div>© <strong>SmartOffer AI</strong> — Vše pro tvorbu nabídek. | <a href="#price" style="color:var(--muted);text-decoration:none">Kontakt</a></div>
+    <div class="small-txt">Potřebuješ úpravu? Napiš: info@tvojefirma.cz</div>
+  </footer>
+
+</div>
+</body>
+</html>
